@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: blue;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+#main{
+  margin-left:15%;
+  padding:1px 16px;
+  height:1000px;"
+}
+#dumbbellImage {
+
+    height: 50%;
+    width: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.centered {
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Droid serif', serif;
+    font-size: 55px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 44px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 30%;
+  left: 54%;
+  text-align: center;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+}
+
+.button2:hover {
+    background-color: Blue;
+    color: white;
+}
