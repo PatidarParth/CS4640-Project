@@ -36,11 +36,6 @@ li a:hover:not(.active) {
   height:1000px;"
 }
 
-#login{
-  margin-left:100%;
-  padding:1px 300px;
-  height:1000px;"
-}
 
 #dumbbellImage {
 
@@ -72,6 +67,14 @@ li a:hover:not(.active) {
   left: 54%;
   text-align: center;
 }
+
+.login{
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  text-align: center;
+}
+
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
