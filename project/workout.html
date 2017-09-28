@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- This page allows the user to begin building their workout by selecting the
+areas that they want to work on -->
 <html>
 <head>
   <title>WorkOut Buddy</title>
@@ -6,6 +8,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="main1.css" />
+  <script language="JavaScript">
+  function handleChange(checkbox) {
+	    if(checkbox.checked == true){
+	    	var value = parseInt(document.getElementById("numselected").innerHTML);
+	    	value++;
+	    	document.getElementById("numselected").innerHTML = value.toString();
+	    }else{
+	    	var value = parseInt(document.getElementById("numselected").innerHTML);
+	    	value--;
+	    	document.getElementById("numselected").innerHTML = value.toString();
+	   }
+	}
+  function goBack() {
+	    window.history.go(-1);
+	}
+  </script>
   </head>
 <body>
   <nav class="navbar navbar-default">
@@ -17,24 +35,55 @@
       <li ><a href="index.html">Home</a></li>
       <li><a href="login.html">Login</a></li>
       <li class="active"><a href="workout.html">Start a Workout</a></li>
+      <li><a href="" onclick="goBack();">Back</a></li>
     </ul>
   </div>
 </nav>
 <div class="image" >
       <img src="images/exercise.jpg" alt="" width= 100% height = 100% />
-      <table align="center" border="1" cellspacing="2" cellpadding="5">
+      <form action="">
+      <h1>Select areas to focus on</h1>
+      <table align="center" border="1" cellspacing="2" cellpadding="20">
       <tr>
-        <th>Select an area to focus on</th>
+        <td class="select" align="left">
+        <img src="images/Ab_Feature.jpg" style="width:350px;height:200px;" />
+        <br>
+        <input type="checkbox" value="Core" onclick='handleChange(this);'>
+        <label for="Core">Core Strengthening</label>
+        </td>
+        <td class="select" align="left">
+        <img src="images/flexibility.jpg" style="width:350px;height:200px;" /><br>
+        <input type="checkbox" value="Flexibility" onclick='handleChange(this);'>
+        <label for="Flexibility">Flexibility</label>
+        </td>
+        <td class="select" align="left">
+        <img src="images/back.jpg" style="width:350px;height:200px;" /><br>
+        <input type="checkbox" value="Back" onclick='handleChange(this);'>
+        <label for="Back">Back</label>
+        </td>
       </tr>
       <tr>
-        <td align="left">Cardio</td>
-        <td align="right">Flexibility</td>
-      </tr>
-      <tr>
-        <td align="left">Core Strengthening</td>
-        <td align="right">Biceps</td>
+        <td class="select" align="left">
+        <img src="images/cardio.jpg" style="width:350px;height:200px;" />
+        <br>
+        <input type="checkbox" value="Cardio" onclick='handleChange(this);'>
+        <label for="Cardio">Cardio</label></td>
+        <td class="select" align="left">
+        <img src="images/arms.jpg" style="width:350px;height:200px;" /><br>
+        <input type="checkbox" value="Arms" onclick='handleChange(this);'>
+        <label for="Arms">Arms</label></td>
+        <td class="select" align="left">
+        <img src="images/legs.jpg" style="width:350px;height:200px;" /><br>
+        <input type="checkbox" value="Legs" onclick='handleChange(this);'>
+        <label for="Legs">Legs</label>
+        </td>
       </tr>
       </table>
+      <div class="container">
+      <p>Number of areas selected:</p><p id="numselected">0</p>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Create my Workout</button>
+      </div>
+      </form>
 </div>
 
 

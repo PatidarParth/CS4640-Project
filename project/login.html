@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- This is the login page for returning users to view their past workouts -->
 <html>
 <head>
   <title>WorkOut Buddy</title>
@@ -7,6 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="main1.css" />
    <link rel="icon" href="../../favicon.ico">
+   <script>
+   function goBack() {
+	    window.history.go(-1);
+	}
+   </script>
   </head>
 <body>
   <nav class="navbar navbar-default">
@@ -18,6 +24,7 @@
       <li ><a href="index.html">Home</a></li>
       <li class="active"><a href="login.html">Login</a></li>
       <li><a href="workout.html">Start a Workout</a></li>
+      <li><a href="" onclick="goBack();">Back</a></li>
     </ul>
   </div>
 </nav>
