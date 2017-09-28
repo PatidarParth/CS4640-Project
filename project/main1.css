@@ -67,7 +67,14 @@ td.select {
     color: black;
     padding: 35px 35px 35px 35px;
 }
+ #pics:hover{
+   opacity: 0.5;
+    filter: alpha(opacity=50);
 
+ }
+ #pics {
+   transition: width 1s, height 1s;
+ }
 .form-signin {
   max-width: 330px;
   padding: 15px;
