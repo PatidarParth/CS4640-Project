@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<html>
+<head>
+<title>PHP Function Example: Returning values</title>
+</head>
+<body>
+<?php
+
+
+alert("Lets Start the Workout");
+
+function alert($msg) {
+    echo "<script type='text/javascript'>alert('$msg')</script>";
+}
+
+?>
+<!DOCTYPE html>
 <!-- This is the home page that introduces our site -->
 <html>
 <head>
@@ -10,10 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
-        //function to show the modal
-        $(document).ready(function () {
-            $('#normalModal').modal('show');
-        });
+
         // function to add back function
         function goBack() {
             window.history.go(-1);
@@ -40,26 +53,6 @@
 
 <img id='mainImage' src="images/main.jpg" alt="main" width=100% height=75%>
 
-<div id="normalModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Keep track of your workouts</h4>
-            </div>
-            <div class="modal-body">
-                <p>Ready to workout</p>
-            </div>
-            <div class="modal-footer">
-                <form action="index.php" method="post" >
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-default" >Start</button>
-              </form>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
 <!-- footer added using bootstrap -->
 
 <footer class="footer-bs">
@@ -80,5 +73,7 @@
         </div>
     </div>
 </footer>
+</body>
+</html>
 </body>
 </html>

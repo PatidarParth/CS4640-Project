@@ -29,6 +29,10 @@ areas that they want to work on -->
   </script>
   </head>
 <body>
+  <?php
+
+
+  ?>
   <!-- navigation bar added used bootstrap -->
   <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -89,6 +93,44 @@ areas that they want to work on -->
         </td>
       </tr>
       </table>
+      <div= "core">
+      <table align="center" border="1" cellspacing="2" cellpadding="20">
+      <tr>
+        <td class="select" align="left">
+        <img id= "pics" src="images/Ab_Feature.jpg" style="width:350px;height:200px;" />
+        <br>
+        <input type="checkbox" value="Core" onclick='handleChange(this);'>
+        <label for="Core">Core Strengthening</label>
+        </td>
+        <td class="select" align="left">
+        <img id= "pics" src="images/flexibility.jpg" style="width:350px;height:200px;" /><br>
+        <input type="checkbox" value="Flexibility" onclick='handleChange(this);'>
+        <label for="Flexibility">Flexibility</label>
+        </td>
+        <td class="select" align="left">
+        <img id= "pics" src="images/back.jpg" style="width:350px;height:200px;" /><br>
+        <input type="checkbox" value="Back" onclick='handleChange(this);'>
+        <label for="Back">Back</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="select" align="center">
+        <img id= "pics" src="images/cardio.jpg" style="width:350px;height:200px;" />
+        <br>
+        <input type="checkbox" value="Cardio" onclick='handleChange(this);'>
+        <label for="Cardio">Cardio</label></td>
+        <td class="select" align="left">
+        <img id= "pics" src="images/arms.jpg" style="width:350px;height:200px;" /><br>
+        <input type="checkbox" value="Arms" onclick='handleChange(this);'>
+        <label for="Arms">Arms</label></td>
+        <td class="select" align="left">
+        <img id= "pics" src="images/legs.jpg" style="width:350px;height:200px;" /><br>
+        <input type="checkbox" value="Legs" onclick='handleChange(this);'>
+        <label for="Legs">Legs</label>
+        </td>
+      </tr>
+      </table>
+    </div>
       <h2 id="WorkoutFont">Number of areas selected:</h2><p id="numselected">0</p>
     <button class="btn btn-info" type="submit" align="center">Create my Workout</button></div>
       </form>
