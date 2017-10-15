@@ -30,8 +30,42 @@ areas that they want to work on -->
   </head>
 <body>
   <?php
-
-
+   if (isset( $_POST["core"])) {
+       echo "<script type='text/javascript'>alert('true')</script>";
+   }
+   else {
+     echo "<script type='text/javascript'>alert('false')</script>";
+   }
+   if (isset( $_POST["flexibility"])) {
+       echo "<script type='text/javascript'>alert('true')</script>";
+   }
+   else {
+     echo "<script type='text/javascript'>alert('false')</script>";
+   }
+   if (isset( $_POST["back"])) {
+       echo "<script type='text/javascript'>alert('true')</script>";
+   }
+   else {
+     echo "<script type='text/javascript'>alert('false')</script>";
+   }
+   if (isset( $_POST["cardio"])) {
+       echo "<script type='text/javascript'>alert('true')</script>";
+   }
+   else {
+     echo "<script type='text/javascript'>alert('false')</script>";
+   }
+   if (isset( $_POST["arm"])) {
+       echo "<script type='text/javascript'>alert('true')</script>";
+   }
+   else {
+     echo "<script type='text/javascript'>alert('false')</script>";
+   }
+   if (isset( $_POST["leg"])) {
+       echo "<script type='text/javascript'>alert('true')</script>";
+   }
+   else {
+     echo "<script type='text/javascript'>alert('false')</script>";
+   }
   ?>
   <!-- navigation bar added used bootstrap -->
   <nav class="navbar navbar-default">
@@ -43,7 +77,8 @@ areas that they want to work on -->
         <li><a href="" onclick="goBack();">Back</a></li>
       <li ><a href="index.html">Home</a></li>
       <li><a href="login.html">Login</a></li>
-      <li class="active"><a href="workout.html">Start a Workout</a></li>
+      <li><a href="workout.html">Start a Workout</a></li>
+      <li class="active"><a href="workout.php">Your Workout</a></li>
     </ul>
   </div>
 </nav>
@@ -51,89 +86,10 @@ areas that they want to work on -->
 <!--image background and table added to figure out what body part you are working out -->
 
 <div class="image" >
-      <img src="images/exercise.jpg" alt="" width= 100% height = 100% />
-      <form action="workout.php"  method="post">
-        <header>
-      <h1>Select areas to focus on</h1>
-    </header>
-      <div class="text-center">
-      <table align="center" border="1" cellspacing="2" cellpadding="20">
-      <tr>
-        <td class="select" align="left">
-        <img id= "pics" src="images/Ab_Feature.jpg" style="width:350px;height:200px;" />
-        <br>
-        <input type="checkbox" value="Core" onclick='handleChange(this);'>
-        <label for="Core">Core Strengthening</label>
-        </td>
-        <td class="select" align="left">
-        <img id= "pics" src="images/flexibility.jpg" style="width:350px;height:200px;" /><br>
-        <input type="checkbox" value="Flexibility" onclick='handleChange(this);'>
-        <label for="Flexibility">Flexibility</label>
-        </td>
-        <td class="select" align="left">
-        <img id= "pics" src="images/back.jpg" style="width:350px;height:200px;" /><br>
-        <input type="checkbox" value="Back" onclick='handleChange(this);'>
-        <label for="Back">Back</label>
-        </td>
-      </tr>
-      <tr>
-        <td class="select" align="center">
-        <img id= "pics" src="images/cardio.jpg" style="width:350px;height:200px;" />
-        <br>
-        <input type="checkbox" value="Cardio" onclick='handleChange(this);'>
-        <label for="Cardio">Cardio</label></td>
-        <td class="select" align="left">
-        <img id= "pics" src="images/arms.jpg" style="width:350px;height:200px;" /><br>
-        <input type="checkbox" value="Arms" onclick='handleChange(this);'>
-        <label for="Arms">Arms</label></td>
-        <td class="select" align="left">
-        <img id= "pics" src="images/legs.jpg" style="width:350px;height:200px;" /><br>
-        <input type="checkbox" value="Legs" onclick='handleChange(this);'>
-        <label for="Legs">Legs</label>
-        </td>
-      </tr>
-      </table>
-      <div= "core">
-      <table align="center" border="1" cellspacing="2" cellpadding="20">
-      <tr>
-        <td class="select" align="left">
-        <img id= "pics" src="images/Ab_Feature.jpg" style="width:350px;height:200px;" />
-        <br>
-        <input type="checkbox" value="Core" onclick='handleChange(this);'>
-        <label for="Core">Core Strengthening</label>
-        </td>
-        <td class="select" align="left">
-        <img id= "pics" src="images/flexibility.jpg" style="width:350px;height:200px;" /><br>
-        <input type="checkbox" value="Flexibility" onclick='handleChange(this);'>
-        <label for="Flexibility">Flexibility</label>
-        </td>
-        <td class="select" align="left">
-        <img id= "pics" src="images/back.jpg" style="width:350px;height:200px;" /><br>
-        <input type="checkbox" value="Back" onclick='handleChange(this);'>
-        <label for="Back">Back</label>
-        </td>
-      </tr>
-      <tr>
-        <td class="select" align="center">
-        <img id= "pics" src="images/cardio.jpg" style="width:350px;height:200px;" />
-        <br>
-        <input type="checkbox" value="Cardio" onclick='handleChange(this);'>
-        <label for="Cardio">Cardio</label></td>
-        <td class="select" align="left">
-        <img id= "pics" src="images/arms.jpg" style="width:350px;height:200px;" /><br>
-        <input type="checkbox" value="Arms" onclick='handleChange(this);'>
-        <label for="Arms">Arms</label></td>
-        <td class="select" align="left">
-        <img id= "pics" src="images/legs.jpg" style="width:350px;height:200px;" /><br>
-        <input type="checkbox" value="Legs" onclick='handleChange(this);'>
-        <label for="Legs">Legs</label>
-        </td>
-      </tr>
-      </table>
+  <div class="form" id="scheduler" style="display: none;">
+      <h1>Core Strength</h1></header>
     </div>
       <h2 id="WorkoutFont">Number of areas selected:</h2><p id="numselected">0</p>
-    <button class="btn btn-info" type="submit" align="center">Create my Workout</button></div>
-      </form>
 </div>
 
 
