@@ -49,41 +49,55 @@ areas that they want to work on -->
 
 <div class="image" >
   <?php
-   if (isset( $_POST["core"])) { ?>
+  $choices = array();
+   if (isset( $_POST["core"])) {
+     array_push($choices, $_POST["core"]);
+     ?>
      <div class="form" id="core" style="display;">
          <h2 class="text-center">Core Strength</h2></header>
        </div>
   <?php } ?>
   <?php
-   if (isset( $_POST["flexibility"])) { ?>
+   if (isset( $_POST["flexibility"])) {
+     array_push($choices, $_POST["flexibility"]);
+     ?>
      <div class="form" id="flexibility" style="display;">
          <h2 class="text-center">Flexibility</h2></header>
        </div>
   <?php } ?>
   <?php
-   if (isset( $_POST["back"])) { ?>
+   if (isset( $_POST["back"])) {
+     array_push($choices, $_POST["back"]);
+      ?>
      <div class="form" id="back" style="display;">
          <h2 class="text-center">Back</h2></header>
        </div>
   <?php } ?>
   <?php
-   if (isset( $_POST["cardio"])) { ?>
+   if (isset( $_POST["cardio"])) {
+     array_push($choices, $_POST["cardio"]);
+      ?>
      <div class="form" id="cardio" style="display;">
          <h2 class="text-center">Cardio</h2></header>
        </div>
   <?php } ?>
   <?php
-   if (isset( $_POST["arm"])) { ?>
+   if (isset( $_POST["arm"])) {
+     array_push($choices, $_POST["arm"]);
+      ?>
      <div class="form" id="arm" style="display;">
          <h2 class="text-center">Arms</h2></header>
        </div>
   <?php } ?>
   <?php
-   if (isset( $_POST["leg"])) { ?>
+   if (isset( $_POST["leg"])) {
+     array_push($choices, $_POST["leg"]);
+     ?>
      <div class="form" id="leg" style="display;">
          <h2 class="text-center">Legs</h2></header>
        </div>
   <?php } ?>
+    <h2 id="WorkoutFont">Focusing on: <?php echo implode(", ", $choices)?></h2>
       <h2 id="WorkoutFont">Number of exercises selected:</h2><p id="numselected">0</p>
       <button id="signin" class="btn btn-primary center-block" type="submit">Completed</button>
 </div>
