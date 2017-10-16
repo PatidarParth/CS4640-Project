@@ -29,44 +29,6 @@ areas that they want to work on -->
   </script>
   </head>
 <body>
-  <?php
-   if (isset( $_POST["core"])) {
-        $
-  }
-   else {
-     echo "<script type='text/javascript'>alert('false')</script>";
-   }
-   if (isset( $_POST["flexibility"])) {
-       echo "<script type='text/javascript'>alert('true')</script>";
-   }
-   else {
-     echo "<script type='text/javascript'>alert('false')</script>";
-   }
-   if (isset( $_POST["back"])) {
-       echo "<script type='text/javascript'>alert('true')</script>";
-   }
-   else {
-     echo "<script type='text/javascript'>alert('false')</script>";
-   }
-   if (isset( $_POST["cardio"])) {
-       echo "<script type='text/javascript'>alert('true')</script>";
-   }
-   else {
-     echo "<script type='text/javascript'>alert('false')</script>";
-   }
-   if (isset( $_POST["arm"])) {
-       echo "<script type='text/javascript'>alert('true')</script>";
-   }
-   else {
-     echo "<script type='text/javascript'>alert('false')</script>";
-   }
-   if (isset( $_POST["leg"])) {
-       echo "<script type='text/javascript'>alert('true')</script>";
-   }
-   else {
-     echo "<script type='text/javascript'>alert('false')</script>";
-   }
-  ?>
   <!-- navigation bar added used bootstrap -->
   <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -86,10 +48,43 @@ areas that they want to work on -->
 <!--image background and table added to figure out what body part you are working out -->
 
 <div class="image" >
-  <div class="form" id="scheduler" style="display;">
-      <h1>Core Strength</h1></header>
+  <?php
+   if (isset( $_POST["core"])) { ?>
+     <div class="form" id="core" style="display;">
+         <h2 class="text-center">Core Strength</h2></header>
+       </div>
+  <?php } ?>
+  <?php
+   if (isset( $_POST["flexibility"])) { ?>
+     <div class="form" id="flexibility" style="display;">
+         <h2 class="text-center">Flexibility</h2></header>
+       </div>
+  <?php } ?>
+  <?php
+   if (isset( $_POST["back"])) { ?>
+     <div class="form" id="back" style="display;">
+         <h2 class="text-center">Back</h2></header>
+       </div>
+  <?php } ?>
+  <?php
+   if (isset( $_POST["cardio"])) { ?>
+     <div class="form" id="cardio" style="display;">
+         <h2 class="text-center">Cardio</h2></header>
+       </div>
+  <?php } ?>
+  <?php
+   if (isset( $_POST["arm"])) { ?>
+     <div class="form" id="arm" style="display;">
+         <h2 class="text-center">Arms</h2></header>
+       </div>
+  <?php } ?>
+  <?php
+   if (isset( $_POST["leg"])) { ?>
+     <div class="form" id="leg" style="display;">
+         <h2 class="text-center">Legs</h2></header>
+       </div>
+  <?php } ?>
 
-    </div>
       <h2 id="WorkoutFont">Number of areas selected:</h2><p id="numselected">0</p>
 </div>
 
@@ -115,5 +110,6 @@ areas that they want to work on -->
               </div>
           </div>
  </footer>
+
 </body>
 </html>
