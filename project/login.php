@@ -23,10 +23,15 @@
          if($_SERVER["REQUEST_METHOD"] == "POST") {
             // username and password sent from form
 
-            $myemail = $_POST["inputEmail"];
-            $mypassword = $_POST["password"];
+            $myemail = test_input($_POST["inputEmail"]);
+            $mypassword = test_input($_POST["password"]);
+          }
+            function test_input($data) {
+              $data = trim($data);
+              $data = htmlspecialchars($data);
+              return $data;
+            }
 
-         }
       ?>
 
 <!-- navigation bar added used bootstrap -->
