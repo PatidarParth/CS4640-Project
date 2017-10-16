@@ -31,8 +31,8 @@ areas that they want to work on -->
 <body>
   <?php
    if (isset( $_POST["core"])) {
-       echo "<script type='text/javascript'>alert('true')</script>";
-   }
+        $
+  }
    else {
      echo "<script type='text/javascript'>alert('false')</script>";
    }
@@ -86,8 +86,9 @@ areas that they want to work on -->
 <!--image background and table added to figure out what body part you are working out -->
 
 <div class="image" >
-  <div class="form" id="scheduler" style="display: none;">
+  <div class="form" id="scheduler" style="display;">
       <h1>Core Strength</h1></header>
+
     </div>
       <h2 id="WorkoutFont">Number of areas selected:</h2><p id="numselected">0</p>
 </div>

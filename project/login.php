@@ -5,7 +5,9 @@
     <title>WorkOut Buddy</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="main1.css"/>
     <link rel="icon" href="../../favicon.ico">
     <script>
@@ -33,21 +35,9 @@
 </nav>
 <!--login username and password is set here using bootstrap -->
 
-<div class="container">
-    <form action="login.php"  method="get" class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" type="email" name="inputEmail" id="inputEmail" class="form-control"
-               placeholder="Email address" required autofocus></br>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
-        </div>
-        <button id="signin" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    </form>
+<div class="container"></br>
+    <h2 class="text-center">  Welcome to Workout Buddy</h2>
+    <h4 class="text-center">Your email address is: <?php echo $_GET["inputEmail"]; ?></h4></br>
 </div> <!-- /container -->
 
 <!-- footer added using bootstrap -->
