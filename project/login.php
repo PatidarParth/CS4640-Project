@@ -22,9 +22,17 @@
 
          if($_SERVER["REQUEST_METHOD"] == "POST") {
             // username and password sent from form
+            if (empty($_POST["inputEmail"])) {
+                $EmailErr = "Email is required";
+              } else {
+                $myemail = test_input($_POST["inputEmail"]);
+              }
+              if (empty($_POST["password"])) {
+                  $passwordErr = "Password is required";
+                } else {
+                  $mypassword = test_input($_POST["password"]);
+                }
 
-            $myemail = test_input($_POST["inputEmail"]);
-            $mypassword = test_input($_POST["password"]);
           }
             function test_input($data) {
               $data = trim($data);
