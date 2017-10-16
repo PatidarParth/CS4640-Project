@@ -84,8 +84,8 @@ areas that they want to work on -->
          <h2 class="text-center">Legs</h2></header>
        </div>
   <?php } ?>
-
-      <h2 id="WorkoutFont">Number of areas selected:</h2><p id="numselected">0</p>
+      <h2 id="WorkoutFont">Number of exercises selected:</h2><p id="numselected">0</p>
+      <button id="signin" class="btn btn-primary center-block" type="submit">Completed</button>
 </div>
 
 

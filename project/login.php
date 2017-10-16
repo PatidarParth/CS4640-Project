@@ -18,6 +18,17 @@
     </script>
 </head>
 <body>
+  <?php
+
+         if($_SERVER["REQUEST_METHOD"] == "POST") {
+            // username and password sent from form
+
+            $myemail = $_POST["inputEmail"];
+            $mypassword = $_POST["password"];
+
+         }
+      ?>
+
 <!-- navigation bar added used bootstrap -->
 
 <nav class="navbar navbar-default">
@@ -37,7 +48,7 @@
 
 <div class="container"></br>
     <h2 class="text-center">  Welcome to Workout Buddy</h2>
-    <h4 class="text-center">Your email address is: <?php echo $_GET["inputEmail"]; ?></h4></br>
+    <h4 class="text-center">Your email address is: <?php echo $myemail?></h4></br>
 </div> <!-- /container -->
 
 <!-- footer added using bootstrap -->
