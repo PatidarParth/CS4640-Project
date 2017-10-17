@@ -83,10 +83,10 @@ areas that they want to work on -->
       ?>
      <div class="form" id="back" style="display;">
          <h2 class="text-center">Back</h2></header>
-		         <p class="text-center"><input name= "snow" type="checkbox" value="snow" onclick='handleChange(this);'>1 min Reverse Snow Angels<br>
-         <input name= "dolphin" type="checkbox" value="dolphin" onclick='handleChange(this);'>30 sec Dolphin Kick<br>
-         <input name= "superman" type="checkbox" value="superman" onclick='handleChange(this);'>30 sec Superman<br>
-         <input name= "hip" type="checkbox" value="hip" onclick='handleChange(this);'>15 Hip Hinges<br>
+		         <p class="text-center"><input name= "snow" type="checkbox" value="snow" onclick='handleChange(this);'> 1 min Reverse Snow Angels<br>
+         <input name= "dolphin" type="checkbox" value="dolphin" onclick='handleChange(this);'> 30 sec Dolphin Kick<br>
+         <input name= "superman" type="checkbox" value="superman" onclick='handleChange(this);'> 30 sec Superman<br>
+         <input name= "hip" type="checkbox" value="hip" onclick='handleChange(this);'> 15 Hip Hinges<br>
          <input name= "pullup" type="checkbox" value="pullup" onclick='handleChange(this);'> 5 Pull-Ups</p>
        </div>
   <?php } ?>
@@ -101,7 +101,7 @@ areas that they want to work on -->
          <input name= "jack" type="checkbox" value="jack" onclick='handleChange(this);'> 30 Jumping Jacks<br>
          <input name= "burpee" type="checkbox" value="burpee" onclick='handleChange(this);'> 10 Burpees<br>
          <input name= "stepup" type="checkbox" value="stepup" onclick='handleChange(this);'> 1 min Step-Up</p>
-         
+
        </div>
   <?php } ?>
   <?php
