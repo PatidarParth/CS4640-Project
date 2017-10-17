@@ -55,6 +55,12 @@ areas that they want to work on -->
      ?>
      <div class="form" id="core" style="display;">
          <h2 class="text-center">Core Strength</h2></header>
+         <p class="text-center"><input name= "twists" type="checkbox" value="twists" onclick='handleChange(this);'> 1 minute Russian Twists<br>
+         <input name= "crunches" type="checkbox" value="crunches" onclick='handleChange(this);'> 1 minute crunches<br>
+         <input name= "plank" type="checkbox" value="plank" onclick='handleChange(this);'> 1 minute plank<br>
+         <input name= "scissor" type="checkbox" value="scissor" onclick='handleChange(this);'> 30 second scissor kicks<br>
+         <input name= "vups" type="checkbox" value="vups" onclick='handleChange(this);'> 20 V-Ups<br>
+         </p>
        </div>
   <?php } ?>
   <?php
@@ -63,6 +69,12 @@ areas that they want to work on -->
      ?>
      <div class="form" id="flexibility" style="display;">
          <h2 class="text-center">Flexibility</h2></header>
+                  <p class="text-center"><input name= "side" type="checkbox" value="side" onclick='handleChange(this);'> Standing Side Stretch<br>
+         <input name= "hang" type="checkbox" value="hang" onclick='handleChange(this);'> Forward Hang<br>
+         <input name= "arch" type="checkbox" value="arch" onclick='handleChange(this);'> Low Lunge Arch<br>
+         <input name= "backtwist" type="checkbox" value="backtwist" onclick='handleChange(this);'> Seated Back Twist<br>
+         <input name= "hipflexor" type="checkbox" value="hipflexor" onclick='handleChange(this);'> Hip Flexor Stretch<br>
+         <input name= "calf" type="checkbox" value="calf" onclick='handleChange(this);'> Calf Stretch</p>
        </div>
   <?php } ?>
   <?php
@@ -71,6 +83,11 @@ areas that they want to work on -->
       ?>
      <div class="form" id="back" style="display;">
          <h2 class="text-center">Back</h2></header>
+		         <p class="text-center"><input name= "snow" type="checkbox" value="snow" onclick='handleChange(this);'>1 min Reverse Snow Angels<br>
+         <input name= "dolphin" type="checkbox" value="dolphin" onclick='handleChange(this);'>30 sec Dolphin Kick<br>
+         <input name= "superman" type="checkbox" value="superman" onclick='handleChange(this);'>30 sec Superman<br>
+         <input name= "hip" type="checkbox" value="hip" onclick='handleChange(this);'>15 Hip Hinges<br>
+         <input name= "pullup" type="checkbox" value="pullup" onclick='handleChange(this);'> 5 Pull-Ups</p>
        </div>
   <?php } ?>
   <?php
@@ -79,6 +96,12 @@ areas that they want to work on -->
       ?>
      <div class="form" id="cardio" style="display;">
          <h2 class="text-center">Cardio</h2></header>
+         <p class="text-center"><input name= "mountain" type="checkbox" value="mountain" onclick='handleChange(this);'> 30 sec Mountain Climbers<br>
+         <input name= "highknees" type="checkbox" value="highknees" onclick='handleChange(this);'> 1 min High Knees<br>
+         <input name= "jack" type="checkbox" value="jack" onclick='handleChange(this);'> 30 Jumping Jacks<br>
+         <input name= "burpee" type="checkbox" value="burpee" onclick='handleChange(this);'> 10 Burpees<br>
+         <input name= "stepup" type="checkbox" value="stepup" onclick='handleChange(this);'> 1 min Step-Up</p>
+         
        </div>
   <?php } ?>
   <?php
@@ -87,6 +110,11 @@ areas that they want to work on -->
       ?>
      <div class="form" id="arm" style="display;">
          <h2 class="text-center">Arms</h2></header>
+         <p class="text-center"><input name= "pulse" type="checkbox" value="pulse" onclick='handleChange(this);'> 30 sec Single Chest Press Pulse<br>
+         <input name= "circles" type="checkbox" value="circles" onclick='handleChange(this);'> 30 sec Arm Circles<br>
+         <input name= "tricep" type="checkbox" value="tricep" onclick='handleChange(this);'> 20 Tricep Dips<br>
+         <input name= "pushup" type="checkbox" value="pushup" onclick='handleChange(this);'> 10 Pushups<br>
+         <input name= "dog" type="checkbox" value="dog" onclick='handleChange(this);'> 1 min Downward Dog</p>
        </div>
   <?php } ?>
   <?php
@@ -95,6 +123,11 @@ areas that they want to work on -->
      ?>
      <div class="form" id="leg" style="display;">
          <h2 class="text-center">Legs</h2></header>
+         <p class="text-center"><input name= "squat" type="checkbox" value="squat" onclick='handleChange(this);'> 30 Squats<br>
+         <input name= "fire" type="checkbox" value="fire" onclick='handleChange(this);'> 30 sec Fire Hydrant<br>
+         <input name= "lunges" type="checkbox" value="lunges" onclick='handleChange(this);'> 30 Lunges<br>
+         <input name= "wallsit" type="checkbox" value="wallsit" onclick='handleChange(this);'> 1 min Wall Sit<br>
+         <input name= "butt" type="checkbox" value="butt" onclick='handleChange(this);'> 30 Butt Lifts</p>
        </div>
   <?php } ?>
     <h2 id="WorkoutFont">Focusing on: <?php echo implode(", ", $choices)?></h2>
