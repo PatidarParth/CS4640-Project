@@ -26,16 +26,18 @@
         <ul class="nav navbar-nav">
             <li><a href="" onclick="goBack();">Back</a></li>
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="login.html">Login</a></li>
-            <li><a href="workout.html">Start a Workout</a></li>
+            <li class="active"><a href="index.jsp">Login</a></li>
+            <li><a href="workout.jsp">Start a Workout</a></li>
         </ul>
     </div>
 </nav>
 <!--login username and password is set here using bootstrap -->
 
 <div class="container">
-    <form action="login"  method="post" class="form-signin">
+    <form action="mailService"  method="post" class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
+        <label class="sr-only">Username</label>
+        <input class="form-control" id= "username" name= "username" placeholder="Username" required autofocus></br>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" type="email" name="inputEmail" id="inputEmail" class="form-control"
                placeholder="Email address" required autofocus></br>
@@ -47,6 +49,7 @@
             </label>
         </div>
         <button id="signin" class="btn btn-info" type="submit">Sign in</button>
+    
     </form>
 </div> <!-- /container -->
 
@@ -62,8 +65,8 @@
             <div class="col-md-6">
                 <ul class="list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="workout.html">Workout</a></li>
+                    <li><a href="index.jsp">Login</a></li>
+                    <li><a href="workout.jsp">Workout</a></li>
                 </ul>
             </div>
         </div>
